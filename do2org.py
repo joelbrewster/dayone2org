@@ -71,9 +71,15 @@ def entry2md(entry):
                 place += "long: "+str(location['longitude'])
                 place += ", lat: "+str(location['latitude'])
             text += place
+            text +='\n'*4
         fp = codecs.open(filename,'w','utf-8')
         fp.write(text)
         fp.close()
+
+        text = text.encode('ascii', 'ignore').decode('ascii')
+
+        with open("output.org", "a") as outputfile:
+            outputfile.write(text)
 
 #i = 0
 for entry in all['entries']:
