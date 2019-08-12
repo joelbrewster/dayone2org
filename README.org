@@ -1,4 +1,7 @@
 * dayone2org
+
+=This is all redundant as Pandoc gets a better result.=
+
 Converting DayOne journals into org files
 
 All credit to: [[https://github.com/ploum/dayone2markdown]]
